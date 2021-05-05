@@ -1,0 +1,197 @@
+/*css variables for styling*/
+
+/*Light Mode Default*/
+:root {
+    --black: #222;
+    --orange: #FF9040;
+    --white: #eee;
+    --pad-1: 1em;
+    --pad-2: 2em;
+    --pad-2-5: 2.5em;
+    --pad-row: 2.5em;
+    --p-big: 1.7em;
+    --p-normal: 1.25em;
+
+    --footer-bg-light: #444;
+    --footer-txt-light: #f5f5f5;
+
+    --btn-bg-light: #f5f5f5;
+    --btn-clr-light: #333;
+
+    --card-1-bg-light: #f5f5f5;
+    --card-1-txt-light: #333;
+}
+
+
+
+.dark-mode {
+    background-color: #111;
+    color: white;
+    --footer-bg-light: #222;
+    --btn-bg-light: #333;
+    --btn-clr-light: #f5f5f5;
+    --card-1-bg-light: #111;
+    --card-1-txt-light: #eee;
+}
+
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    /*font-family: 'Abril Fatface', cursive;*/
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.p-normal {
+    font-size: var(--p-normal);
+}
+
+.
+
+/*Navigation Styling*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/*.navbar-nav {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.other-nav {
+    background-color: var(--orange) !important;
+}
+
+li a {
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    margin: 12px;
+}
+
+/*End Navigation Styling*/
+
+/*My Javascript Components */
+#dark-light-toggle {
+    position: absolute;
+    top: 25px;
+    right: 200px;
+    text-align: center;
+    border-radius: 20%;
+    font-size: 25px;
+    background-color: var(--btn-bg-light);
+    width: 40px;
+    color: var(--btn-clr-light);
+    z-index: 2;
+}
+
+
+#back-to-top-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    font-size: 40px;
+    border: none;
+    background-color: #333;
+    color: #f5f5f5;
+
+}
+
+/*Layout Styling*/
+header {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-image: url(assets/images/homepage/new-hero.jpg) !important;
+}
+
+
+#bg-panel-2 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-image: url(assets/images/homepage/passport.jpg) !important;
+}
+
+#bg-panel-3 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-image: url(assets/images/homepage/brothers-home.jpg) !important;
+}
+
+
+
+.my-card-home-1 {
+    background-color: var(--card-1-bg-light);
+    color: var(--card-1-txt-light);
+
+}
+
+.my-card-home-2 {
+    background-color: var(--orange);
+    color: var(--white);
+
+}
+
+.my-card-home-1,
+.my-card-home-2 {
+    padding: 3em;
+    /*font-size: var(--p-normal);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0px 1px 2px;*/
+}
+
+
+/*@media only screen and (min-width:900px) {
+    .my-card-home-2 {
+        margin-top: -335px;
+        margin-left: -40px;
+    }
+
+}*/
+
+
+
+
+
+.my-jumbotron {
+    padding: var(--pad-row);
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.my-jumbotron a {
+    color: var(--white);
+}
+
+
+
+
+.pad-row {
+    padding: var(--pad-row);
+}
+
+footer {
+    padding: var(--pad-2);
+    background-color: var(--footer-bg-light);
+    color: var(--footer-txt-light);
+}
